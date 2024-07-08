@@ -31,5 +31,6 @@ Record about my data analysis history.
   * [Titanic](https://www.kaggle.com/code/jindot/1-titanic-beginner)
   * [UKR and Russia War EDA](https://www.kaggle.com/code/jindot/2-ukraine-vs-russia-eda)
     > got a bronze medal ! 
-  *
+  * [Online Retail](https://colab.research.google.com/drive/1HlMUq0xtaIHqBZkWQHBuZe_O0ixWgwRT#scrollTo=wOZxKOKcBF2s)
+    > 코랩으로 들어가면 필요한 부분만 확인 가능합니다.
 </div>
