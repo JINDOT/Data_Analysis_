@@ -11,26 +11,20 @@
 </div>
 <div id = 'content'>
  
-  <!-- ABOUT THE PROJECT -->
-  # About this resposit
+## List:
+####  Titanic
+     https://www.kaggle.com/code/jindot/1-titanic-beginner
 
-Record about my data analysis history.
+####  UKR and Russia War EDA
+     https://www.kaggle.com/code/jindot/2-ukraine-vs-russia-eda
+> BRONE MEDAL!
 
-### To Do List:
-* Programmers SQL 1 ~ 3 every day.
-* At least, 2 hours study about data analysis.
-* Make a list for Job Interview.
-* Keep Update Resume.
-* Work hard, enjoy Process.
+####  Online Retail
+* [Basic and Cohort Analysis](https://colab.research.google.com/drive/1HlMUq0xtaIHqBZkWQHBuZe_O0ixWgwRT)
+* [RFM](https://colab.research.google.com/drive/1SIHPygiL6mWBzJMNia8d5c0mlb3mI9_B)
+* [Clustering](https://colab.research.google.com/drive/1mFpEyo6-kHTXTp_SAMam8DN76eEoK1gL)
 <br/>
 <br/>
 
 
-### Project
-  Upload Kaggle or Github.
-  * [Titanic](https://www.kaggle.com/code/jindot/1-titanic-beginner)
-  * [UKR and Russia War EDA](https://www.kaggle.com/code/jindot/2-ukraine-vs-russia-eda)
-    > got a bronze medal ! 
-  * [Online Retail](https://colab.research.google.com/drive/1HlMUq0xtaIHqBZkWQHBuZe_O0ixWgwRT#scrollTo=wOZxKOKcBF2s)
-    > 코랩으로 들어가면 필요한 부분만 확인 가능합니다.
 </div>
