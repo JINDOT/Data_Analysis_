@@ -16,9 +16,8 @@
      https://www.kaggle.com/code/jindot/1-titanic-beginner
 
 <!-- UKR RUS WAR-->
-####  UKR and Russia War EDA
+####  UKR and Russia War EDA 🥉
      https://www.kaggle.com/code/jindot/2-ukraine-vs-russia-eda
-> BRONE MEDAL!
 
 ##### 왜 이 데이터를 선택했나? 
 > 해당 프로젝트 시기 우크라이나 러시아 전쟁은 전 세계로부터 주목을 받고 있는 전쟁이었고, 무엇보다 현대전의 양상을 잘보여준다는 신문 기사를 보고 해보았다.
