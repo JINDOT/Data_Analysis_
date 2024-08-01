@@ -13,13 +13,13 @@
  
 ## List:
 <!-- Titanic -->
-####  Titanic
+###  Titanic
      https://www.kaggle.com/code/jindot/1-titanic-beginner
 ##### 요약
 > 가벼운 마음으로 처음해보는 데이터 분석 및 예측
 <!-- Titanic END -->
 <!-- UKR RUS WAR-->
-####  UKR and Russia War EDA 🥉
+###  UKR and Russia War EDA 🥉
      https://www.kaggle.com/code/jindot/2-ukraine-vs-russia-eda
      
 ##### 요약 
@@ -37,7 +37,7 @@
 > 도메인의 중요성이 여기서 나오는 것 같다. 그래프를 보고 왜 그런지에 대해서 하나하나 검색을 해봐야한다. 시각화를 다양하게 하였지만 전쟁에 대한 자세한 내용을 몰라 심화적인 내용으로 들어가지 못하는 것 같다.
 <!-- UKR RUS WAR END -->
 <!-- Online Retail -->
-####  Online Retail
+###  Online Retail
 * [Basic and Cohort Analysis](https://colab.research.google.com/drive/1HlMUq0xtaIHqBZkWQHBuZe_O0ixWgwRT)
 * [RFM](https://colab.research.google.com/drive/1SIHPygiL6mWBzJMNia8d5c0mlb3mI9_B)
 * [Clustering](https://colab.research.google.com/drive/1mFpEyo6-kHTXTp_SAMam8DN76eEoK1gL)
