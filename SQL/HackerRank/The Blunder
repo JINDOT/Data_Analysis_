@@ -1,15 +1,19 @@
+/*
 Samantha was tasked with calculating the average monthly salaries for all employees in the EMPLOYEES table, but did not realize her keyboard's  key was broken until after completing the calculation.
 She wants your help finding the difference between her miscalculation (using salaries with any zeros removed), and the actual average salary.
 Write a query calculating the amount of error (i.e.: actual-miscalculated average monthly salaries), and round it up to the next integer.
-
+*/
+/*
 1. not lnclude 0 , salary average
 2. Salary average
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
 SELECT
     ROUND(AVG(Salary)) -
     ROUND(AVG(REPLACE(Salary, '0', '')))
 FROM EMPLOYEES
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 # 평균 급여에서 사만다식 평균 급여를 뺀 다음 반올림 하면 잘못된 값이 나옴.
 # 원인은 평균 급여도 소수점이고 사만다식 급여도 소수점이여서
