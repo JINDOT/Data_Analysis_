@@ -1,0 +1,8 @@
+/* mysql
+ Query the difference between the maximum and minimum populations in CITY.
+*/
+SELECT
+    MAX(POPULATION) - MIN(POPULATION)
+FROM CITY;
+
+# 연산자 사용 가능.
