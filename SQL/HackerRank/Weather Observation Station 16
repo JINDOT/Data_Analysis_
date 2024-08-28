@@ -1,0 +1,10 @@
+/*
+Query the smallest Northern Latitude (LAT_N) from STATION that is greater than 38.7780. Round your answer to  decimal places.
+*/
+
+SELECT
+    ROUND(MIN(LAT_N), 4)
+FROM STATION
+WHERE LAT_N > 38.7780
+
+# 아 생각해보니까 저번 최대값 구하는 것도 MAX 쓰면 되잖어...
