@@ -1,0 +1,25 @@
+/*
+Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer.
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+*/
+
+SELECT
+   B.CONTINENT,
+   FLOOR(AVG(A.POPULATION))
+FROM CITY A
+INNER JOIN COUNTRY B
+ON A.COUNTRYCODE = B.CODE
+GROUP BY B.CONTINENT;
+
+# 올림, 반올림, 내림
+# CEIL 올림
+# ROUND 반올림
+# - ROUND(x, y) y 자리수 위치까지 반올림
+# FLOOR 내림
+# TRUNCATE(x, y) y 자리수 위치까지 내림
+
+# GROUP BY 의 사용조건
+# SELECT 절에 있는 열 중 집계 함수에 포함되지 않은 열은 GROUP BY에 포함.
+# > '대륙별' 인구 평균을 구하는 문제 = '대륙별'로 묶어서 진행
+
+# rounded down : 내림
