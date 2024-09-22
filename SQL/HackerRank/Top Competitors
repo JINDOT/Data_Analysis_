@@ -1,0 +1,42 @@
+/*
+Julia just finished conducting a coding contest, and she needs your help assembling the leaderboard! 
+Write a query to print the respective hacker_id and name of hackers who achieved full scores 
+for more than one challenge. Order your output in descending order by the total number of challenges 
+in which the hacker earned a full score. If more than one hacker received full scores in same number of challenges,
+then sort them by ascending hacker_id.
+
+두 개 이상의 챌린지에서 만점을 달성한 해커의 이름과 ID를 출력.
+만점을 받은 챌린지 수 기준으로 내림차순.
+두 명 이상의 해커가 동일한 수의 챌린지에서 만점인 경우 Id를 오름차순.
+*/
+SELECT H.hacker_id, H.name
+FROM Hackers H
+# 테이블 조인
+JOIN Submissions S ON H.hacker_id = S.hacker_id
+JOIN Challenges C ON S.challenge_id = C.challenge_id
+JOIN Difficulty D ON C.difficulty_level = D.difficulty_level
+# 제출 점수와 도전 과제 만점 점수가 일치함?
+WHERE D.score = S.score
+# H.hacker_id, H.name 그룹화 > 해커별 반점 기록 횟수 집계
+GROUP BY H.hacker_id, H.name
+# 2개 이상의 도전과제에서 만점인 경우
+HAVING COUNT(S.challenge_id) > 1
+# 만점 챌린지 수! 내림차순, 두 명 이상의 동일한 수 챌린지일 경우 ID 오름차순
+ORDER BY COUNT(S.challenge_id) DESC, H.hacker_id ASC;
+
+
+# 
+(1)
+JOIN Submissions S ON H.hacker_id = S.hacker_id
+JOIN Challenges C ON S.challenge_id = C.challenge_id
+JOIN Difficulty D ON C.difficulty_level = D.difficulty_level
+(2)
+JOIN Challenges C ON H.hacker_id = C.hacker_id
+JOIN Submissions S ON H.hacker_id = S.hacker_id
+JOIN Difficulty D ON D.difficulty_level = C.difficulty_level
+
+이 두 개의 차이점은 조인 순서이다. 조인 순서에 따라서 값이 달라진다.
+(1)Submissions 테이블에서 먼저 해커의 제출 데이터를 필터링한 후에 그 제출에 해당하는 도전 과제를 불러온다.
+(2)해커가 참여한 도전 과제를 중심으로 모든 도전 과제와 제출 데이터를 해커 ID를 통해 일치시킨다.
+
+진짜 겁나 어렵다.
