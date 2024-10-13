@@ -1,0 +1,24 @@
+/*
+total score > 모든 challenge의 Max score를 sum 한 것.
+hacker_id, name, total score를 출력.
+두 명 이상의 해커가 동일 total score일 경우 hacker_id에 대해 오름차순 정렬
+결과에서 총 점수가 0인 경우 제외.
+*/
+
+SELECT H.hacker_id, H.name, SUM(max_scores.max_score) AS total_score
+FROM Hackers H
+JOIN (
+SELECT hacker_id, challenge_id, MAX(score) AS max_score
+FROM Submissions
+GROUP BY hacker_id, challenge_id) AS max_scores
+ON H.hacker_id = max_scores.hacker_id
+GROUP BY H.hacker_id, H.name
+HAVING SUM(max_scores.max_score) > 0
+ORDER BY total_score DESC, H.hacker_id ASC;
+
+##
+1. 서브쿼리로 Max score를 가진 hacker들을 추출
+2. Hackers 테이블과 조인하여 hacker id, name, Max score 의 Sum 을 출력
+3. Having 통한 0점 제외
+4. 정렬
+##
