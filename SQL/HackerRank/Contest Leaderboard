@@ -22,3 +22,7 @@ ORDER BY total_score DESC, H.hacker_id ASC;
 3. Having 통한 0점 제외
 4. 정렬
 ##
+##
+HAVING SUM(max_scores.max_score) > 0 부분이 리뷰 도중 에러가 났음.
+>> 별칭으로 대채(total_score)
+>> HAVING total_score > 0
