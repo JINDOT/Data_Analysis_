@@ -1,0 +1,17 @@
+/*
+List of CITY , have an even ID(2,4,6...)
+any order(=No need), exclude duplicates
+*/
+SELECT DISTINCT CITY
+FROM STATION
+WHERE ID%2=0;
+
+# ㅋ .. 
+# ID%2 == 0 으로 이걸 틀리네 문법 아무 생각 없이 쓰지말자..
+### 
+StackOverFlow 에 원리를 물어본 사람이 있었다
+SQL은 선언적 언어이며, 할당은 일반적으로 SQL 쿼리 자체에서 이루어지지 않습니다. 
+결과적으로 SQL은 =할당이나 동등성 검사의 의미 모호성 문제가 없습니다. 
+결과적으로 동등성을 검사하는 데 사용하는 데 문제가 없습니다 =. 
+반면 Java와 같은 프로그래밍 언어에서는 =할당에 single을 사용하고 ==비교에 while을 사용합니다.
+###
