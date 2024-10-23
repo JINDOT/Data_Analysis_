@@ -1,0 +1,7 @@
+/*
+NANE field, American, populations larger than 120,000
+*/
+
+SELECT NAME
+FROM CITY
+WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000;
