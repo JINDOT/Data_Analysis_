@@ -1,0 +1,9 @@
+/*
+All Columns
+ID = 1661
+*/
+SELECT *
+FROM CITY
+WHERE ID = 1661;
+
+# * 기억나자마자 바로 써먹기
