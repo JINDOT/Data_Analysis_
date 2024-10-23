@@ -1,0 +1,9 @@
+# 어느 정도 문제를 풀면서 다시 기초를 보는게 좋겠다라는 생각이 들어 작성하는중.
+/*
+all columns for all american cities
+populations larger than 100,000
+*/
+
+SELECT ID, NAME, COUNTRYCODE, DISTRICT, POPULATION
+FROM CITY
+WHERE COUNTRYCODE = 'USA' AND POPULATION > 100000;
