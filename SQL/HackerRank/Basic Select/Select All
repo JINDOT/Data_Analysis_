@@ -1,0 +1,13 @@
+/*
+All columns
+*/
+
+SELECT ID, NAME, COUNTRYCODE, DISTRICT, POPULATION
+FROM CITY; 
+
+# 가만 생각해보니 이렇게 하나씩 쓸 필요가 없었다.
+
+SELECT *
+FROM CITY; 
+
+# * 있는걸 왜 생각 못했을까..? 너무 높은 난이도에 적응된건가...?
