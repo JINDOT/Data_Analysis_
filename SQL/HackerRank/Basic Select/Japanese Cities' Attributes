@@ -1,0 +1,7 @@
+/*
+All attributes
+CountryCode = JPN
+*/
+SELECT *
+FROM CITY
+WHERE COUNTRYCODE = 'JPN';
